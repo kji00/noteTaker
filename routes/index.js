@@ -1,9 +1,9 @@
-const app = require('express');
+const express = require('express');
 const notesRouter = require('./notes');
 const { readFromFile, writeToFile, readAndAppend } = require('../helpers/fsUtils');
 
 const app = express();
 
-app.Request('/notes', notesRouter)
+app.use('/notes', notesRouter)
 
 module.exports = app

@@ -1,5 +1,6 @@
-const router = require('express').Router()
-const { readFromFile, writeToFile, readAndAppend } = require('../helpers/fsUtils')
+const router = require('express').Router();
+const uuid = require('../helpers/uuid');
+const { readFromFile, writeToFile, readAndAppend } = require('../helpers/fsUtils');
 
 // GET routes for /api/notes
 router.get('/', (req, res) => {

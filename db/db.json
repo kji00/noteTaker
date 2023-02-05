@@ -1,6 +1,16 @@
 [
     {
-        "title":"Test Title",
-        "text":"Test text"
+        "title": "Test Title",
+        "text": "Test text"
+    },
+    {
+        "title": "get eggs",
+        "text": "go to safeway and buy eggs today",
+        "note_id": "a848"
+    },
+    {
+        "title": "get milk",
+        "text": "go to whole foods and buy milk",
+        "note_id": "8dae"
     }
 ]
