@@ -12,5 +12,20 @@ router.get('/', (req, res) => {
 router.post('/', (req, res) => {
     console.log('POST route for /api/notes')
 
-    
+    const { title, text} = req.body;
+
+    if (title && text) {
+        const newNote = {
+            title,
+            text,
+            note_id: uuid(),
+        }
+
+        readAndAppend(newNote, './db/db.json');
+        res.json('Note was added successfully')
+    } else {
+        res.error('Error adding note')
+    }
 })
+
+module.exports = router
