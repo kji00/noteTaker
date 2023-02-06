@@ -6,11 +6,31 @@
     {
         "title": "get eggs",
         "text": "go to safeway and buy eggs today",
-        "note_id": "a848"
+        "id": "a848"
     },
     {
         "title": "get milk",
         "text": "go to whole foods and buy milk",
-        "note_id": "8dae"
+        "id": "8dae"
+    },
+    {
+        "title": "oil change",
+        "text": "get oil change for car on friday",
+        "id": "a5d9"
+    },
+    {
+        "title": "practice js",
+        "text": "practice js in codewars",
+        "id": "abb1"
+    },
+    {
+        "title": "new app",
+        "text": "create a new CRUD app",
+        "id": "dec5"
+    },
+    {
+        "title": "sadf",
+        "text": "asdfasfd",
+        "id": "4500"
     }
 ]

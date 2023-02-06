@@ -1,6 +1,7 @@
 const router = require('express').Router();
+// uuid creates unique id field for new entries from the front end
 const uuid = require('../helpers/uuid');
-const { readFromFile, writeToFile, readAndAppend } = require('../helpers/fsUtils');
+const { readFromFile, readAndAppend } = require('../helpers/fsUtils');
 
 // GET routes for /api/notes
 router.get('/', (req, res) => {
@@ -19,7 +20,8 @@ router.post('/', (req, res) => {
         const newNote = {
             title,
             text,
-            note_id: uuid(),
+            // adds unique id for each new note entry
+            id: uuid(),
         }
 
         readAndAppend(newNote, './db/db.json');
@@ -29,4 +31,5 @@ router.post('/', (req, res) => {
     }
 })
 
+//exports router.get for /notes 
 module.exports = router
